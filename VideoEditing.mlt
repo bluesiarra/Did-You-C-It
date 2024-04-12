@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.6.0" title="Shotcut version 22.03.30" producer="main_bin">
+  <profile description="automatic" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:00:42.000">
+    <property name="length">00:00:42.033</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:00:42.000"/>
+  </playlist>
+  <chain id="chain1" out="00:00:42.867">
+    <property name="length">00:00:42.900</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/INFILM_working_lilcharles_interview.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">49744587310b9b0a0a4c3b6ede8a39be</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">INFILM_working_lilcharles_interview.MOV</property>
+    <property name="xml">was here</property>
+    <filter id="filter1" in="00:00:00.867" out="00:00:42.867">
+      <property name="lift_r">-0.25301</property>
+      <property name="lift_g">-0.25301</property>
+      <property name="lift_b">-0.25301</property>
+      <property name="gamma_r">1.00002</property>
+      <property name="gamma_g">0.823987</property>
+      <property name="gamma_b">0.827985</property>
+      <property name="gain_r">1.00003</property>
+      <property name="gain_g">1.00003</property>
+      <property name="gain_b">1.00003</property>
+      <property name="mlt_service">lift_gamma_gain</property>
+    </filter>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain1" in="00:00:00.867" out="00:00:42.867"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:00:42.000">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+  </tractor>
+</mlt>
