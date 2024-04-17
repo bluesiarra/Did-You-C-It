@@ -4,8 +4,8 @@
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:00:42.000">
-    <property name="length">00:00:42.033</property>
+  <producer id="black" in="00:00:00.000" out="00:00:41.000">
+    <property name="length">00:00:41.033</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,12 +14,12 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:00:42.000"/>
+    <entry producer="black" in="00:00:00.000" out="00:00:41.000"/>
   </playlist>
-  <chain id="chain1" out="00:00:42.867">
+  <chain id="chain0" out="00:00:42.867">
     <property name="length">00:00:42.900</property>
     <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/INFILM_working_lilcharles_interview.MOV</property>
+    <property name="resource">clips/INFILM_working_lilcharles_interview.MOV</property>
     <property name="mlt_service">avformat-novalidate</property>
     <property name="seekable">1</property>
     <property name="audio_index">1</property>
@@ -29,25 +29,25 @@
     <property name="ignore_points">0</property>
     <property name="shotcut:caption">INFILM_working_lilcharles_interview.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter1" in="00:00:00.867" out="00:00:42.867">
-      <property name="lift_r">-0.25301</property>
-      <property name="lift_g">-0.25301</property>
-      <property name="lift_b">-0.25301</property>
+    <filter id="filter0" in="00:00:00.533" out="00:00:41.533">
+      <property name="lift_r">-0.12401</property>
+      <property name="lift_g">-0.12401</property>
+      <property name="lift_b">-0.12401</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.823987</property>
-      <property name="gamma_b">0.827985</property>
-      <property name="gain_r">1.00003</property>
-      <property name="gain_g">1.00003</property>
-      <property name="gain_b">1.00003</property>
+      <property name="gamma_g">0.796002</property>
+      <property name="gamma_b">0.737896</property>
+      <property name="gain_r">1</property>
+      <property name="gain_g">1</property>
+      <property name="gain_b">1</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
   </chain>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="chain1" in="00:00:00.867" out="00:00:42.867"/>
+    <entry producer="chain0" in="00:00:00.533" out="00:00:41.533"/>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:00:42.000">
+  <tractor id="tractor0" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:00:41.000">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
