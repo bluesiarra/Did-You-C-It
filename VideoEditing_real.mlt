@@ -614,9 +614,9 @@ p, li { white-space: pre-wrap; }
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
-      <property name="gamma_r">0.935988</property>
-      <property name="gamma_g">0.750011</property>
-      <property name="gamma_b">0.61799</property>
+      <property name="gamma_r">1.00002</property>
+      <property name="gamma_g">0.648997</property>
+      <property name="gamma_b">0.698009</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
@@ -641,8 +641,8 @@ p, li { white-space: pre-wrap; }
       <property name="lift_g">-0.12401</property>
       <property name="lift_b">-0.12401</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.797986</property>
-      <property name="gamma_b">0.737987</property>
+      <property name="gamma_g">0.681895</property>
+      <property name="gamma_b">0.710338</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
@@ -673,9 +673,9 @@ p, li { white-space: pre-wrap; }
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
-      <property name="gamma_r">0.911238</property>
-      <property name="gamma_g">0.737377</property>
-      <property name="gamma_b">0.708385</property>
+      <property name="gamma_r">0.913008</property>
+      <property name="gamma_g">0.624186</property>
+      <property name="gamma_b">0.660197</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
@@ -707,8 +707,8 @@ p, li { white-space: pre-wrap; }
       <property name="lift_g">1.5259e-05</property>
       <property name="lift_b">1.5259e-05</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.751995</property>
-      <property name="gamma_b">0.763989</property>
+      <property name="gamma_g">0.765545</property>
+      <property name="gamma_b">0.784405</property>
       <property name="gain_r">1.00003</property>
       <property name="gain_g">1.00003</property>
       <property name="gain_b">1.00003</property>
@@ -718,12 +718,12 @@ p, li { white-space: pre-wrap; }
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
-      <property name="gamma_r">1.1</property>
-      <property name="gamma_g">1.1</property>
-      <property name="gamma_b">1.1</property>
-      <property name="gain_r">0.9</property>
-      <property name="gain_g">0.9</property>
-      <property name="gain_b">0.9</property>
+      <property name="gamma_r">1.12</property>
+      <property name="gamma_g">1.12</property>
+      <property name="gamma_b">1.12</property>
+      <property name="gain_r">0.88</property>
+      <property name="gain_g">0.88</property>
+      <property name="gain_b">0.88</property>
       <property name="mlt_service">lift_gamma_gain</property>
       <property name="shotcut:filter">contrast</property>
     </filter>
@@ -763,12 +763,12 @@ p, li { white-space: pre-wrap; }
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
-      <property name="gamma_r">1.1</property>
-      <property name="gamma_g">1.1</property>
-      <property name="gamma_b">1.1</property>
-      <property name="gain_r">0.9</property>
-      <property name="gain_g">0.9</property>
-      <property name="gain_b">0.9</property>
+      <property name="gamma_r">1.16</property>
+      <property name="gamma_g">1.16</property>
+      <property name="gamma_b">1.16</property>
+      <property name="gain_r">0.84</property>
+      <property name="gain_g">0.84</property>
+      <property name="gain_b">0.84</property>
       <property name="mlt_service">lift_gamma_gain</property>
       <property name="shotcut:filter">contrast</property>
     </filter>
@@ -777,8 +777,8 @@ p, li { white-space: pre-wrap; }
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.737377</property>
-      <property name="gamma_b">0.740215</property>
+      <property name="gamma_g">0.742229</property>
+      <property name="gamma_b">0.766918</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
