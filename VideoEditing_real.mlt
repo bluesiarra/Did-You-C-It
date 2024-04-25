@@ -611,12 +611,12 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">works_doc_interview_1.MOV</property>
     <property name="xml">was here</property>
     <filter id="filter31" in="00:00:04.167" out="00:01:45.067">
-      <property name="lift_r">0</property>
-      <property name="lift_g">0</property>
-      <property name="lift_b">0</property>
-      <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.648997</property>
-      <property name="gamma_b">0.698009</property>
+      <property name="lift_r">-0.0290074</property>
+      <property name="lift_g">-0.0290074</property>
+      <property name="lift_b">-0.0290074</property>
+      <property name="gamma_r">1.04143</property>
+      <property name="gamma_g">0.741009</property>
+      <property name="gamma_b">0.792004</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
@@ -637,12 +637,12 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">INFILM_working_lilcharles_interview.MOV</property>
     <property name="xml">was here</property>
     <filter id="filter32" in="00:00:00.533" out="00:00:41.533">
-      <property name="lift_r">-0.12401</property>
-      <property name="lift_g">-0.12401</property>
-      <property name="lift_b">-0.12401</property>
+      <property name="lift_r">-0.218921</property>
+      <property name="lift_g">-0.218921</property>
+      <property name="lift_b">-0.218921</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.681895</property>
-      <property name="gamma_b">0.710338</property>
+      <property name="gamma_g">0.681987</property>
+      <property name="gamma_b">0.711986</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
