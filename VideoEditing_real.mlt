@@ -4,8 +4,8 @@
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:11:03.667">
-    <property name="length">00:11:03.700</property>
+  <producer id="black" in="00:00:00.000" out="00:10:22.467">
+    <property name="length">00:10:22.500</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,7 +14,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:11:03.667"/>
+    <entry producer="black" in="00:00:00.000" out="00:10:22.467"/>
   </playlist>
   <chain id="chain0" out="00:00:20.600">
     <property name="length">00:00:20.633</property>
@@ -146,19 +146,11 @@ p, li { white-space: pre-wrap; }
     </filter>
     <filter id="filter8" out="00:00:01.933">
       <property name="start">1</property>
-      <property name="level">00:00:01.667=1;00:00:01.933=0</property>
+      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
-      <property name="shotcut:animOut">9</property>
-    </filter>
-    <filter id="filter9" out="00:00:01.933">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">9</property>
+      <property name="shotcut:animOut">00:00:00.333</property>
     </filter>
   </producer>
   <producer id="producer1" in="00:00:00.000" out="03:59:59.967">
@@ -175,80 +167,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter10" out="00:00:02.000">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;DIRECTED BY&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;AADRIT TALUKDAR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter11" out="00:00:02.000">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.367=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">12</property>
-    </filter>
-    <filter id="filter12" out="00:00:02.000">
-      <property name="start">1</property>
-      <property name="level">00:00:01.700=1;00:00:02.000=0</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeOutBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animOut">10</property>
-    </filter>
-    <filter id="filter13" out="00:00:02.000">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:00.000=-60;00:00:00.367=0</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeInVolume</property>
-      <property name="shotcut:animIn">12</property>
-    </filter>
-    <filter id="filter14" out="00:00:02.000">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.700=0;00:00:02.000=-60</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">10</property>
-    </filter>
-  </producer>
-  <producer id="producer2" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter15" out="00:00:01.933">
+    <filter id="filter9" out="00:00:01.933">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -275,40 +194,32 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter16" out="00:00:01.933">
+    <filter id="filter10" out="00:00:01.933">
       <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.367=1</property>
+      <property name="level">00:00:00.000=0;00:00:00.333=1</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeInBrightness</property>
       <property name="alpha">1</property>
-      <property name="shotcut:animIn">12</property>
+      <property name="shotcut:animIn">11</property>
     </filter>
-    <filter id="filter17" out="00:00:01.933">
+    <filter id="filter11" out="00:00:01.933">
       <property name="start">1</property>
-      <property name="level">00:00:01.600=1;00:00:01.900=0</property>
+      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
-      <property name="shotcut:animOut">10</property>
+      <property name="shotcut:animOut">00:00:00.333</property>
     </filter>
-    <filter id="filter18" out="00:00:01.933">
+    <filter id="filter12" out="00:00:01.933">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:00.000=-60;00:00:00.367=0</property>
+      <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeInVolume</property>
-      <property name="shotcut:animIn">12</property>
-    </filter>
-    <filter id="filter19" out="00:00:01.900">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.600=0;00:00:01.900=-60</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">10</property>
+      <property name="shotcut:animIn">11</property>
     </filter>
   </producer>
-  <producer id="producer3" in="00:00:00.000" out="03:59:59.967">
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
@@ -322,7 +233,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter20" out="00:00:01.933">
+    <filter id="filter13" out="00:00:01.933">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -350,7 +261,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter21" out="00:00:01.933">
+    <filter id="filter14" out="00:00:01.933">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.300=1</property>
       <property name="mlt_service">brightness</property>
@@ -358,7 +269,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.333</property>
     </filter>
-    <filter id="filter22" out="00:00:01.933">
+    <filter id="filter15" out="00:00:01.933">
       <property name="start">1</property>
       <property name="level">00:00:01.667=1;00:00:01.933=0</property>
       <property name="mlt_service">brightness</property>
@@ -366,7 +277,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter23" out="00:00:01.933">
+    <filter id="filter16" out="00:00:01.933">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
@@ -375,26 +286,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animOut">9</property>
     </filter>
   </producer>
-  <tractor id="tractor0" in="00:00:00.000" out="00:00:00.000">
-    <property name="shotcut:transition">lumaMix</property>
-    <track producer="producer2" in="00:00:01.933" out="00:00:01.933"/>
-    <track producer="producer3" in="00:00:00.000" out="00:00:00.000"/>
-    <transition id="transition0">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="factory">loader</property>
-      <property name="mlt_service">luma</property>
-      <property name="alpha_over">1</property>
-    </transition>
-    <transition id="transition1">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="mlt_service">mix</property>
-      <property name="start">-1</property>
-      <property name="accepts_blanks">1</property>
-    </transition>
-  </tractor>
-  <producer id="producer4" in="00:00:00.000" out="03:59:59.967">
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
@@ -408,7 +300,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter24" out="00:00:01.933">
+    <filter id="filter17" out="00:00:01.933">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -435,7 +327,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter25" out="00:00:01.933">
+    <filter id="filter18" out="00:00:01.933">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.300=1</property>
       <property name="mlt_service">brightness</property>
@@ -443,7 +335,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.333</property>
     </filter>
-    <filter id="filter26" out="00:00:01.933">
+    <filter id="filter19" out="00:00:01.933">
       <property name="start">1</property>
       <property name="level">00:00:01.667=1;00:00:01.933=0</property>
       <property name="mlt_service">brightness</property>
@@ -451,13 +343,63 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter27" out="00:00:01.933">
+    <filter id="filter20" out="00:00:01.933">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeOutVolume</property>
       <property name="shotcut:animOut">9</property>
+    </filter>
+  </producer>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2024-04-18T21:52:04</property>
+    <property name="shotcut:caption">blackscreen.png</property>
+    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <filter id="filter21" out="00:00:01.133">
+      <property name="argument"></property>
+      <property name="geometry">110 140 1700 800 1</property>
+      <property name="family">Sans</property>
+      <property name="size">48</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">0x000000ff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">0x00000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="pixel_ratio">1</property>
+      <property name="mlt_service">qtext</property>
+      <property name="shotcut:filter">richText</property>
+      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;ARYAN TUMMALA&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;AS&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;&amp;quot;EYEBALLS&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+    <filter id="filter22" out="00:00:01.133">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:00.300=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">00:00:00.333</property>
     </filter>
   </producer>
   <producer id="producer5" in="00:00:00.000" out="03:59:59.967">
@@ -474,7 +416,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter28" out="00:00:01.133">
+    <filter id="filter23" in="00:00:01.167" out="00:00:01.933">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -501,57 +443,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter29" out="00:00:01.133">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.300=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">00:00:00.333</property>
-    </filter>
-  </producer>
-  <producer id="producer6" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter30" in="00:00:01.167" out="00:00:01.933">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;ARYAN TUMMALA&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;AS&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;&amp;quot;EYEBALLS&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter31" in="00:00:01.167" out="00:00:01.933">
+    <filter id="filter24" in="00:00:01.167" out="00:00:01.933">
       <property name="start">1</property>
       <property name="level">00:00:00.800=1</property>
       <property name="mlt_service">brightness</property>
@@ -559,7 +451,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter32" in="00:00:01.167" out="00:00:01.933">
+    <filter id="filter25" in="00:00:01.167" out="00:00:01.933">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
@@ -568,7 +460,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animOut">9</property>
     </filter>
   </producer>
-  <producer id="producer7" in="00:00:00.000" out="03:59:59.967">
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.35.22.png</property>
@@ -582,7 +474,34 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">66297f5e87b5dfd82eb0d6576984f26f</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter33" out="00:00:00.467">
+    <filter id="filter26" out="00:00:00.467">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-94.8688 -54 2109.11 1188 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+  </producer>
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.27.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2024-04-19T21:36:33</property>
+    <property name="shotcut:hash">89308b4c52d368aadbc5a4291a99c56e</property>
+    <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.27.png</property>
+    <filter id="filter27" out="00:00:00.300">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -600,17 +519,16 @@ p, li { white-space: pre-wrap; }
   <producer id="producer8" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.27.png</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.33.png</property>
     <property name="ttl">1</property>
     <property name="aspect_ratio">1</property>
     <property name="progressive">1</property>
     <property name="seekable">1</property>
     <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-19T21:36:33</property>
-    <property name="shotcut:hash">89308b4c52d368aadbc5a4291a99c56e</property>
-    <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.27.png</property>
-    <property name="xml">was here</property>
-    <filter id="filter34" out="00:00:00.300">
+    <property name="creation_time">2024-04-19T21:36:39</property>
+    <property name="shotcut:hash">50374eb80f57fb1e72cdfb47aee80167</property>
+    <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.33.png</property>
+    <filter id="filter28" out="00:00:00.500">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -628,17 +546,16 @@ p, li { white-space: pre-wrap; }
   <producer id="producer9" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.33.png</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.39.png</property>
     <property name="ttl">1</property>
     <property name="aspect_ratio">1</property>
     <property name="progressive">1</property>
     <property name="seekable">1</property>
     <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-19T21:36:39</property>
-    <property name="shotcut:hash">50374eb80f57fb1e72cdfb47aee80167</property>
-    <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.33.png</property>
-    <property name="xml">was here</property>
-    <filter id="filter35" out="00:00:00.500">
+    <property name="creation_time">2024-04-19T21:36:45</property>
+    <property name="shotcut:hash">45fa49530dbe53ed9f11a8517992320b</property>
+    <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.39.png</property>
+    <filter id="filter29" out="00:00:00.400">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -656,34 +573,6 @@ p, li { white-space: pre-wrap; }
   <producer id="producer10" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.39.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-19T21:36:45</property>
-    <property name="shotcut:hash">45fa49530dbe53ed9f11a8517992320b</property>
-    <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.39.png</property>
-    <property name="xml">was here</property>
-    <filter id="filter36" out="00:00:00.400">
-      <property name="background">color:#00000000</property>
-      <property name="mlt_service">affine</property>
-      <property name="shotcut:filter">affineSizePosition</property>
-      <property name="transition.fill">1</property>
-      <property name="transition.distort">0</property>
-      <property name="transition.rect">-94.8688 -54 2109.11 1188 1</property>
-      <property name="transition.valign">middle</property>
-      <property name="transition.halign">center</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-      <property name="transition.threads">0</property>
-      <property name="transition.fix_rotate_x">0</property>
-    </filter>
-  </producer>
-  <producer id="producer11" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Screenshot 2024-04-19 at 14.36.45.png</property>
     <property name="ttl">1</property>
     <property name="aspect_ratio">1</property>
@@ -694,7 +583,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">af53037c7ca0bb1087327edb269c0f26</property>
     <property name="shotcut:caption">Screenshot 2024-04-19 at 14.36.45.png</property>
     <property name="xml">was here</property>
-    <filter id="filter37" out="00:00:00.600">
+    <filter id="filter30" out="00:00:00.600">
       <property name="background">color:#00000000</property>
       <property name="mlt_service">affine</property>
       <property name="shotcut:filter">affineSizePosition</property>
@@ -721,7 +610,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">d1b4bf81cb59d25cf9a4a4c28e0a3668</property>
     <property name="shotcut:caption">works_doc_interview_1.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter38" in="00:00:04.167" out="00:01:45.067">
+    <filter id="filter31" in="00:00:04.167" out="00:01:45.067">
       <property name="lift_r">-0.0290074</property>
       <property name="lift_g">-0.0290074</property>
       <property name="lift_b">-0.0290074</property>
@@ -747,7 +636,7 @@ p, li { white-space: pre-wrap; }
     <property name="ignore_points">0</property>
     <property name="shotcut:caption">INFILM_working_lilcharles_interview.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter39" in="00:00:00.533" out="00:00:41.533">
+    <filter id="filter32" in="00:00:00.533" out="00:00:41.533">
       <property name="lift_r">-0.218921</property>
       <property name="lift_g">-0.218921</property>
       <property name="lift_b">-0.218921</property>
@@ -772,7 +661,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">3f073d5af4e3a12eb0fbdc24ca56eae8</property>
     <property name="shotcut:caption">INFILM_works_crazy_interview_1.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter40" in="00:00:04.533" out="00:01:37.533">
+    <filter id="filter33" in="00:00:04.533" out="00:01:37.533">
       <property name="start">1</property>
       <property name="level">00:01:30.033=1;00:01:33.000=0</property>
       <property name="mlt_service">brightness</property>
@@ -780,19 +669,19 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">00:00:03.000</property>
     </filter>
-    <filter id="filter41" in="00:00:04.533" out="00:01:37.533">
-      <property name="lift_r">0.207111</property>
-      <property name="lift_g">0.207111</property>
-      <property name="lift_b">0.207111</property>
-      <property name="gamma_r">0.913985</property>
-      <property name="gamma_g">0.670573</property>
-      <property name="gamma_b">0.726268</property>
+    <filter id="filter34" in="00:00:04.533" out="00:01:37.533">
+      <property name="lift_r">0</property>
+      <property name="lift_g">0</property>
+      <property name="lift_b">0</property>
+      <property name="gamma_r">0.913008</property>
+      <property name="gamma_g">0.624186</property>
+      <property name="gamma_b">0.660197</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
-    <filter id="filter42" in="00:00:04.533" out="00:01:37.533">
+    <filter id="filter35" in="00:00:04.533" out="00:01:37.533">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:01:31.033=0;00:01:33.000=-60</property>
@@ -813,19 +702,19 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">e2308df4560f27dbfad9515e45b92e18</property>
     <property name="shotcut:caption">working_entrance1_1.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter43" in="00:00:05.400" out="00:01:16.200">
-      <property name="lift_r">-0.0989853</property>
-      <property name="lift_g">-0.0989853</property>
-      <property name="lift_b">-0.0989853</property>
+    <filter id="filter36" in="00:00:05.400" out="00:01:16.200">
+      <property name="lift_r">1.5259e-05</property>
+      <property name="lift_g">1.5259e-05</property>
+      <property name="lift_b">1.5259e-05</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.707134</property>
-      <property name="gamma_b">0.741009</property>
+      <property name="gamma_g">0.765545</property>
+      <property name="gamma_b">0.784405</property>
       <property name="gain_r">1.00003</property>
       <property name="gain_g">1.00003</property>
       <property name="gain_b">1.00003</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
-    <filter id="filter44" in="00:00:05.400" out="00:01:16.200">
+    <filter id="filter37" in="00:00:05.400" out="00:01:16.200">
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
@@ -850,7 +739,6 @@ p, li { white-space: pre-wrap; }
     <property name="mute_on_pause">0</property>
     <property name="shotcut:hash">0069d9bb23ce18bbe36509c22d296fe0</property>
     <property name="shotcut:caption">6923433-sd_960_540_30fps.mp4</property>
-    <property name="xml">was here</property>
   </chain>
   <chain id="chain6" out="00:04:19.967">
     <property name="length">00:04:20.000</property>
@@ -863,8 +751,7 @@ p, li { white-space: pre-wrap; }
     <property name="mute_on_pause">0</property>
     <property name="shotcut:hash">4eccfdbdd54231e46417883559fe9a46</property>
     <property name="shotcut:caption">working_entrance2_2.MOV</property>
-    <property name="xml">was here</property>
-    <filter id="filter45" in="00:00:08.200" out="00:04:19.967">
+    <filter id="filter38" in="00:00:08.200" out="00:04:19.967">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.467=1</property>
       <property name="mlt_service">brightness</property>
@@ -872,7 +759,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.500</property>
     </filter>
-    <filter id="filter46" in="00:00:08.200" out="00:04:19.967">
+    <filter id="filter39" in="00:00:08.200" out="00:04:19.967">
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
@@ -885,293 +772,34 @@ p, li { white-space: pre-wrap; }
       <property name="mlt_service">lift_gamma_gain</property>
       <property name="shotcut:filter">contrast</property>
     </filter>
-    <filter id="filter47" in="00:00:08.200" out="00:04:19.967">
-      <property name="lift_r">-0.111986</property>
-      <property name="lift_g">-0.159014</property>
-      <property name="lift_b">-0.140002</property>
+    <filter id="filter40" in="00:00:08.200" out="00:04:19.967">
+      <property name="lift_r">0</property>
+      <property name="lift_g">0</property>
+      <property name="lift_b">0</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.815717</property>
-      <property name="gamma_b">0.8448</property>
+      <property name="gamma_g">0.742229</property>
+      <property name="gamma_b">0.766918</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
   </chain>
-  <producer id="producer12" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter48" out="00:00:01.933">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;A&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;PUMPKIN-BY-THE-OCEAN&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;PRODUCTION&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:120pt; color:#d1d5d5;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter49" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.300=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">00:00:00.333</property>
-    </filter>
-    <filter id="filter50" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeOutBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animOut">00:00:00.333</property>
-    </filter>
-  </producer>
-  <producer id="producer13" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter51" out="00:00:01.933">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;DIRECTED BY&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;AADRIT TALUKDAR&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter52" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.333=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">11</property>
-    </filter>
-    <filter id="filter53" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeOutBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animOut">00:00:00.333</property>
-    </filter>
-    <filter id="filter54" out="00:00:01.933">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeInVolume</property>
-      <property name="shotcut:animIn">11</property>
-    </filter>
-  </producer>
-  <producer id="producer14" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter55" out="00:00:01.933">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;PRODUCED BY&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;JACOB LIU&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter56" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.333=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">11</property>
-    </filter>
-    <filter id="filter57" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeOutBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animOut">00:00:00.333</property>
-    </filter>
-    <filter id="filter58" out="00:00:01.933">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeInVolume</property>
-      <property name="shotcut:animIn">11</property>
-    </filter>
-  </producer>
-  <producer id="producer15" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter59" out="00:00:01.933">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;SIYU FAN&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;AUSTIN SHI&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;ARYAN TUMMALA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter60" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.300=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">00:00:00.333</property>
-    </filter>
-    <filter id="filter61" out="00:00:01.933">
-      <property name="start">1</property>
-      <property name="level">00:00:01.667=1;00:00:01.933=0</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeOutBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animOut">9</property>
-    </filter>
-    <filter id="filter62" out="00:00:01.933">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">9</property>
-    </filter>
-  </producer>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
     <entry producer="chain0" in="00:00:16.500" out="00:00:20.600"/>
     <entry producer="producer0" in="00:00:00.000" out="00:00:01.933"/>
-    <entry producer="producer1" in="00:00:00.000" out="00:00:02.000"/>
-    <entry producer="producer2" in="00:00:00.000" out="00:00:01.900"/>
-    <entry producer="tractor0" in="00:00:00.000" out="00:00:00.000"/>
-    <entry producer="producer3" in="00:00:00.033" out="00:00:01.933"/>
-    <entry producer="producer4" in="00:00:00.000" out="00:00:01.933"/>
-    <entry producer="producer5" in="00:00:00.000" out="00:00:01.133"/>
-    <entry producer="producer6" in="00:00:01.167" out="00:00:01.933"/>
-    <entry producer="producer7" in="00:00:00.000" out="00:00:00.467"/>
-    <entry producer="producer8" in="00:00:00.000" out="00:00:00.300"/>
-    <entry producer="producer9" in="00:00:00.000" out="00:00:00.500"/>
-    <entry producer="producer10" in="00:00:00.000" out="00:00:00.400"/>
-    <entry producer="producer11" in="00:00:00.000" out="00:00:00.600"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:01.933"/>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:01.933"/>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:01.933"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:01.133"/>
+    <entry producer="producer5" in="00:00:01.167" out="00:00:01.933"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:00.467"/>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:00.300"/>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:00.500"/>
+    <entry producer="producer9" in="00:00:00.000" out="00:00:00.400"/>
+    <entry producer="producer10" in="00:00:00.000" out="00:00:00.600"/>
     <entry producer="chain1" in="00:00:04.167" out="00:01:45.067"/>
     <entry producer="chain2" in="00:00:00.600" out="00:00:41.533"/>
     <entry producer="chain3" in="00:00:04.533" out="00:01:37.533"/>
@@ -1179,19 +807,68 @@ p, li { white-space: pre-wrap; }
     <entry producer="chain5" in="00:00:00.000" out="00:00:00.367"/>
     <blank length="00:00:48.133"/>
     <entry producer="chain6" in="00:00:08.200" out="00:04:19.967"/>
-    <blank length="00:00:00.667"/>
-    <entry producer="producer12" in="00:00:00.000" out="00:00:01.933"/>
-    <entry producer="producer13" in="00:00:00.000" out="00:00:01.933"/>
-    <blank length="00:00:00.033"/>
-    <entry producer="producer14" in="00:00:00.000" out="00:00:01.933"/>
-    <blank length="00:00:00.033"/>
-    <entry producer="producer15" in="00:00:00.000" out="00:00:01.933"/>
   </playlist>
   <playlist id="playlist1">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V2</property>
     <blank length="00:00:00.033"/>
   </playlist>
+  <chain id="chain7" out="00:00:03.033">
+    <property name="length">00:00:03.067</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Downloads/vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="mlt_service">avformat</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">1</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">01bb07220fc6175a17ca779e5f9ee7bd</property>
+    <property name="shotcut:caption">vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain8" out="00:00:03.033">
+    <property name="length">00:00:03.067</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Downloads/vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="mlt_service">avformat</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">1</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">01bb07220fc6175a17ca779e5f9ee7bd</property>
+    <property name="shotcut:caption">vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain9" out="00:00:03.033">
+    <property name="length">00:00:03.067</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Downloads/vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="mlt_service">avformat</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">1</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">01bb07220fc6175a17ca779e5f9ee7bd</property>
+    <property name="shotcut:caption">vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain10" out="00:00:03.033">
+    <property name="length">00:00:03.067</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Downloads/vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="mlt_service">avformat</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">1</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">01bb07220fc6175a17ca779e5f9ee7bd</property>
+    <property name="shotcut:caption">vine-boom-sound-effect(chosic.com).mp3</property>
+    <property name="xml">was here</property>
+  </chain>
   <chain id="chain11" out="00:02:04.800">
     <property name="length">00:02:04.833</property>
     <property name="eof">pause</property>
@@ -1205,7 +882,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">working_entrance1_1.MOV</property>
     <property name="shotcut:defaultAudioIndex">1</property>
     <property name="xml">was here</property>
-    <filter id="filter63" in="00:01:16.300" out="00:02:04.800">
+    <filter id="filter41" in="00:01:16.300" out="00:02:04.800">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:48.033=0;00:00:48.500=-60</property>
@@ -1214,55 +891,35 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animOut">00:00:00.500</property>
     </filter>
   </chain>
-  <chain id="chain7" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter64" in="00:00:37.867" out="00:01:16.467">
-      <property name="hradius">100</property>
-      <property name="vradius">100</property>
-      <property name="mlt_service">box_blur</property>
-    </filter>
-  </chain>
   <playlist id="playlist2">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A1</property>
-    <blank length="00:05:22.600"/>
+    <blank length="00:00:14.467"/>
+    <entry producer="chain7" in="00:00:00.167" out="00:00:00.433"/>
+    <entry producer="chain8" in="00:00:00.167" out="00:00:00.567"/>
+    <blank length="00:00:00.133"/>
+    <entry producer="chain9" in="00:00:00.167" out="00:00:00.567"/>
+    <entry producer="chain10" in="00:00:00.167" out="00:00:00.567"/>
+    <blank length="00:05:06.033"/>
     <entry producer="chain11" in="00:01:16.300" out="00:02:04.800"/>
-    <blank length="00:04:13.933"/>
-    <entry producer="chain7" in="00:00:37.867" out="00:01:16.467"/>
   </playlist>
-  <playlist id="playlist3">
-    <property name="shotcut:audio">1</property>
-    <property name="shotcut:name">A2</property>
-    <blank length="00:00:00.033"/>
-  </playlist>
-  <tractor id="tractor1" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:11:03.667">
+  <tractor id="tractor0" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:10:22.467">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
-    <property name="shotcut:scaleFactor">2.1176</property>
+    <property name="shotcut:scaleFactor">0.0636231</property>
     <track producer="background"/>
     <track producer="playlist0"/>
     <track producer="playlist1"/>
     <track producer="playlist2" hide="video"/>
-    <track producer="playlist3" hide="video"/>
-    <transition id="transition2">
+    <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition3">
+    <transition id="transition1">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
       <property name="version">0.1</property>
@@ -1270,14 +927,14 @@ p, li { white-space: pre-wrap; }
       <property name="threads">0</property>
       <property name="disable">1</property>
     </transition>
-    <transition id="transition4">
+    <transition id="transition2">
       <property name="a_track">0</property>
       <property name="b_track">2</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
     </transition>
-    <transition id="transition5">
+    <transition id="transition3">
       <property name="a_track">1</property>
       <property name="b_track">2</property>
       <property name="version">0.1</property>
@@ -1285,16 +942,9 @@ p, li { white-space: pre-wrap; }
       <property name="threads">0</property>
       <property name="disable">0</property>
     </transition>
-    <transition id="transition6">
+    <transition id="transition4">
       <property name="a_track">0</property>
       <property name="b_track">3</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="transition7">
-      <property name="a_track">0</property>
-      <property name="b_track">4</property>
       <property name="mlt_service">mix</property>
       <property name="always_active">1</property>
       <property name="sum">1</property>
