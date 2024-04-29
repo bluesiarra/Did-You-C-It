@@ -4,8 +4,8 @@
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:13:44.233">
-    <property name="length">00:13:44.267</property>
+  <producer id="black" in="00:00:00.000" out="00:13:45.567">
+    <property name="length">00:13:45.600</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,7 +14,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:13:44.233"/>
+    <entry producer="black" in="00:00:00.000" out="00:13:45.567"/>
   </playlist>
   <chain id="chain0" out="00:00:20.600">
     <property name="length">00:00:20.633</property>
@@ -974,7 +974,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter49" out="00:00:01.933">
+    <filter id="filter49" out="00:00:02.300">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1001,7 +1001,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter50" out="00:00:01.933">
+    <filter id="filter50" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.333=1</property>
       <property name="mlt_service">brightness</property>
@@ -1009,15 +1009,15 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">11</property>
     </filter>
-    <filter id="filter51" out="00:00:01.933">
+    <filter id="filter51" out="00:00:02.300">
       <property name="start">1</property>
-      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
+      <property name="level">00:00:02.000=1;00:00:02.300=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
       <property name="shotcut:animOut">00:00:00.333</property>
     </filter>
-    <filter id="filter52" out="00:00:01.933">
+    <filter id="filter52" out="00:00:02.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
@@ -1040,7 +1040,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter53" out="00:00:01.933">
+    <filter id="filter53" out="00:00:02.300">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1067,7 +1067,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter54" out="00:00:01.933">
+    <filter id="filter54" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.333=1</property>
       <property name="mlt_service">brightness</property>
@@ -1075,15 +1075,15 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">11</property>
     </filter>
-    <filter id="filter55" out="00:00:01.933">
+    <filter id="filter55" out="00:00:02.300">
       <property name="start">1</property>
-      <property name="level">00:00:01.633=1;00:00:01.933=0</property>
+      <property name="level">00:00:02.000=1;00:00:02.300=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
       <property name="shotcut:animOut">00:00:00.333</property>
     </filter>
-    <filter id="filter56" out="00:00:01.933">
+    <filter id="filter56" out="00:00:02.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
@@ -1106,7 +1106,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter57" out="00:00:01.933">
+    <filter id="filter57" out="00:00:02.300">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1134,7 +1134,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter58" out="00:00:01.933">
+    <filter id="filter58" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.300=1</property>
       <property name="mlt_service">brightness</property>
@@ -1142,18 +1142,18 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.333</property>
     </filter>
-    <filter id="filter59" out="00:00:01.933">
+    <filter id="filter59" out="00:00:02.300">
       <property name="start">1</property>
-      <property name="level">00:00:01.667=1;00:00:01.933=0</property>
+      <property name="level">00:00:02.033=1;00:00:02.300=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter60" out="00:00:01.933">
+    <filter id="filter60" out="00:00:02.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
+      <property name="level">00:00:02.033=0;00:00:02.300=-60</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeOutVolume</property>
       <property name="shotcut:animOut">9</property>
@@ -1173,7 +1173,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter61" out="00:00:01.933">
+    <filter id="filter61" out="00:00:02.300">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1200,7 +1200,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter62" out="00:00:01.933">
+    <filter id="filter62" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.300=1</property>
       <property name="mlt_service">brightness</property>
@@ -1208,18 +1208,18 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.333</property>
     </filter>
-    <filter id="filter63" out="00:00:01.933">
+    <filter id="filter63" out="00:00:02.300">
       <property name="start">1</property>
-      <property name="level">00:00:01.667=1;00:00:01.933=0</property>
+      <property name="level">00:00:02.033=1;00:00:02.300=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter64" out="00:00:01.933">
+    <filter id="filter64" out="00:00:02.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
+      <property name="level">00:00:02.033=0;00:00:02.300=-60</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeOutVolume</property>
       <property name="shotcut:animOut">9</property>
@@ -1272,7 +1272,15 @@ p, li { white-space: pre-wrap; }
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeInBrightness</property>
       <property name="alpha">1</property>
-      <property name="shotcut:animIn">00:00:00.333</property>
+      <property name="shotcut:animIn">10</property>
+    </filter>
+    <filter id="filter67" out="00:00:01.133">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:00.300=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">10</property>
     </filter>
   </producer>
   <producer id="producer18" in="00:00:00.000" out="03:59:59.967">
@@ -1289,7 +1297,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter67" in="00:00:01.167" out="00:00:01.933">
+    <filter id="filter68" in="00:00:01.167" out="00:00:02.267">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1316,18 +1324,18 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter68" in="00:00:01.167" out="00:00:01.933">
+    <filter id="filter69" in="00:00:01.167" out="00:00:02.267">
       <property name="start">1</property>
-      <property name="level">00:00:00.800=1</property>
+      <property name="level">00:00:00.833=1;00:00:01.100=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter69" in="00:00:01.167" out="00:00:01.933">
+    <filter id="filter70" in="00:00:01.167" out="00:00:02.267">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:01.667=0;00:00:01.933=-60</property>
+      <property name="level">00:00:00.833=0;00:00:01.100=-60</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeOutVolume</property>
       <property name="shotcut:animOut">9</property>
@@ -1360,12 +1368,12 @@ p, li { white-space: pre-wrap; }
     <entry producer="chain7" in="00:00:06.033" out="00:02:56.300"/>
     <entry producer="producer12" in="00:01:28.200" out="00:01:29.400"/>
     <entry producer="chain8" in="00:00:03.267" out="00:00:21.333"/>
-    <entry producer="producer13" in="00:00:00.000" out="00:00:01.933"/>
-    <entry producer="producer14" in="00:00:00.000" out="00:00:01.933"/>
-    <entry producer="producer15" in="00:00:00.000" out="00:00:01.933"/>
-    <entry producer="producer16" in="00:00:00.000" out="00:00:01.933"/>
+    <entry producer="producer13" in="00:00:00.000" out="00:00:02.300"/>
+    <entry producer="producer14" in="00:00:00.000" out="00:00:02.300"/>
+    <entry producer="producer15" in="00:00:00.000" out="00:00:02.300"/>
+    <entry producer="producer16" in="00:00:00.000" out="00:00:02.300"/>
     <entry producer="producer17" in="00:00:00.000" out="00:00:01.133"/>
-    <entry producer="producer18" in="00:00:01.167" out="00:00:01.933"/>
+    <entry producer="producer18" in="00:00:01.167" out="00:00:02.267"/>
   </playlist>
   <playlist id="playlist1">
     <property name="shotcut:video">1</property>
@@ -1441,7 +1449,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">working_entrance1_1.MOV</property>
     <property name="shotcut:defaultAudioIndex">1</property>
     <property name="xml">was here</property>
-    <filter id="filter70" in="00:01:16.300" out="00:02:04.800">
+    <filter id="filter71" in="00:01:16.300" out="00:02:04.800">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:48.033=0;00:00:48.500=-60</property>
@@ -1481,13 +1489,68 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter71" in="00:00:37.967" out="00:00:48.333">
+    <filter id="filter72" in="00:00:38.333" out="00:00:49.667">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:10.033=0;00:00:10.367=-60</property>
+      <property name="level">00:00:11.000=0;00:00:11.333=-60</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeOutVolume</property>
       <property name="shotcut:animOut">11</property>
+    </filter>
+    <filter id="filter73" in="00:00:38.333" out="00:00:49.667">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:01.000=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">31</property>
+    </filter>
+    <filter id="filter74" in="00:00:38.333" out="00:00:49.667">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter75" in="00:00:38.333" out="00:00:49.667">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter76" in="00:00:38.333" out="00:00:49.667">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
     </filter>
   </chain>
   <playlist id="playlist2">
@@ -1504,15 +1567,15 @@ p, li { white-space: pre-wrap; }
     <entry producer="chain13" in="00:01:16.300" out="00:02:04.800"/>
     <blank length="00:07:00.133"/>
     <entry producer="producer19" in="00:01:28.200" out="00:01:29.967"/>
-    <blank length="00:00:19.333"/>
-    <entry producer="chain14" in="00:00:37.967" out="00:00:48.333"/>
+    <blank length="00:00:19.700"/>
+    <entry producer="chain14" in="00:00:38.333" out="00:00:49.667"/>
   </playlist>
   <playlist id="playlist3">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A2</property>
     <blank length="00:00:00.033"/>
   </playlist>
-  <tractor id="tractor1" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:13:44.233">
+  <tractor id="tractor1" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:13:45.567">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
