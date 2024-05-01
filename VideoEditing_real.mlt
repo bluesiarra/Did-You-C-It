@@ -4,8 +4,8 @@
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:13:51.033">
-    <property name="length">00:13:51.067</property>
+  <producer id="black" in="00:00:00.000" out="00:14:32.767">
+    <property name="length">00:14:32.800</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,7 +14,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:13:51.033"/>
+    <entry producer="black" in="00:00:00.000" out="00:14:32.767"/>
   </playlist>
   <chain id="chain0" out="00:00:20.600">
     <property name="length">00:00:20.633</property>
@@ -666,8 +666,112 @@ p, li { white-space: pre-wrap; }
       <property name="transition.threads">0</property>
       <property name="transition.fix_rotate_x">0</property>
     </filter>
+    <filter id="filter35" out="00:00:01.533">
+      <property name="start">1</property>
+      <property name="level">00:00:01.400=1;00:00:01.533=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">5</property>
+    </filter>
+    <filter id="filter36" out="00:00:01.533">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:01.400=0;00:00:01.533=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">5</property>
+    </filter>
   </producer>
-  <chain id="chain1" out="00:01:46.300">
+  <chain id="chain1" out="00:00:39.867">
+    <property name="length">00:00:39.900</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/IMG_2467.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3ca8d5940bb4770a122a4647592cdd49</property>
+    <property name="shotcut:caption">IMG_2467.MOV</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter37" out="00:00:32.300">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-165.415 -168.738 2688 1512 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter38" out="00:00:32.300">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:00.567=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">18</property>
+    </filter>
+    <filter id="filter39" out="00:00:32.300">
+      <property name="lift_r">1.5259e-05</property>
+      <property name="lift_g">1.5259e-05</property>
+      <property name="lift_b">1.5259e-05</property>
+      <property name="gamma_r">0.976028</property>
+      <property name="gamma_g">0.630961</property>
+      <property name="gamma_b">1.00002</property>
+      <property name="gain_r">1</property>
+      <property name="gain_g">1</property>
+      <property name="gain_b">1</property>
+      <property name="mlt_service">lift_gamma_gain</property>
+    </filter>
+  </chain>
+  <chain id="chain2" out="00:00:39.867">
+    <property name="length">00:00:39.900</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/IMG_2467.MOV</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3ca8d5940bb4770a122a4647592cdd49</property>
+    <property name="shotcut:caption">IMG_2467.MOV</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter40" in="00:00:32.333" out="00:00:33.167">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-165.415 -168.738 2688 1512 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+    <filter id="filter41" in="00:00:32.333" out="00:00:33.167">
+      <property name="lift_r">1.5259e-05</property>
+      <property name="lift_g">1.5259e-05</property>
+      <property name="lift_b">1.5259e-05</property>
+      <property name="gamma_r">1.00002</property>
+      <property name="gamma_g">0.178012</property>
+      <property name="gamma_b">0.252964</property>
+      <property name="gain_r">1</property>
+      <property name="gain_g">1</property>
+      <property name="gain_b">1</property>
+      <property name="mlt_service">lift_gamma_gain</property>
+    </filter>
+  </chain>
+  <chain id="chain3" out="00:01:46.300">
     <property name="length">00:01:46.333</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/works_doc_interview_1.MOV</property>
@@ -679,11 +783,11 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">d1b4bf81cb59d25cf9a4a4c28e0a3668</property>
     <property name="shotcut:caption">works_doc_interview_1.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter35" in="00:00:04.167" out="00:01:45.067">
+    <filter id="filter42" in="00:00:04.367" out="00:01:45.067">
       <property name="lift_r">-0.0290074</property>
       <property name="lift_g">-0.0290074</property>
       <property name="lift_b">-0.0290074</property>
-      <property name="gamma_r">1.041</property>
+      <property name="gamma_r">1.03899</property>
       <property name="gamma_g">0.741985</property>
       <property name="gamma_b">0.793988</property>
       <property name="gain_r">1</property>
@@ -692,7 +796,7 @@ p, li { white-space: pre-wrap; }
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
   </chain>
-  <chain id="chain2" out="00:00:42.867">
+  <chain id="chain4" out="00:00:42.867">
     <property name="length">00:00:42.900</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/INFILM_working_lilcharles_interview.MOV</property>
@@ -705,20 +809,20 @@ p, li { white-space: pre-wrap; }
     <property name="ignore_points">0</property>
     <property name="shotcut:caption">INFILM_working_lilcharles_interview.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter36" in="00:00:00.533" out="00:00:41.533">
+    <filter id="filter43" in="00:00:00.533" out="00:00:41.533">
       <property name="lift_r">-0.218921</property>
       <property name="lift_g">-0.218921</property>
       <property name="lift_b">-0.218921</property>
       <property name="gamma_r">1.00002</property>
-      <property name="gamma_g">0.681987</property>
-      <property name="gamma_b">0.711986</property>
+      <property name="gamma_g">0.751629</property>
+      <property name="gamma_b">0.762463</property>
       <property name="gain_r">1</property>
       <property name="gain_g">1</property>
       <property name="gain_b">1</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
   </chain>
-  <chain id="chain3" out="00:01:37.533">
+  <chain id="chain5" out="00:01:37.533">
     <property name="length">00:01:37.567</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/INFILM_works_crazy_interview_1.MOV</property>
@@ -730,7 +834,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">3f073d5af4e3a12eb0fbdc24ca56eae8</property>
     <property name="shotcut:caption">INFILM_works_crazy_interview_1.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter37" in="00:00:04.533" out="00:01:37.533">
+    <filter id="filter44" in="00:00:04.533" out="00:01:37.533">
       <property name="start">1</property>
       <property name="level">00:01:30.033=1;00:01:33.000=0</property>
       <property name="mlt_service">brightness</property>
@@ -738,7 +842,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">00:00:03.000</property>
     </filter>
-    <filter id="filter38" in="00:00:04.533" out="00:01:37.533">
+    <filter id="filter45" in="00:00:04.533" out="00:01:37.533">
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
@@ -750,7 +854,7 @@ p, li { white-space: pre-wrap; }
       <property name="gain_b">1</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
-    <filter id="filter39" in="00:00:04.533" out="00:01:37.533">
+    <filter id="filter46" in="00:00:04.533" out="00:01:37.533">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:01:31.033=0;00:01:33.000=-60</property>
@@ -759,7 +863,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animOut">00:00:02.000</property>
     </filter>
   </chain>
-  <chain id="chain4" out="00:02:04.800">
+  <chain id="chain6" out="00:02:04.800">
     <property name="length">00:02:04.833</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/working_entrance1_1.MOV</property>
@@ -771,7 +875,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">e2308df4560f27dbfad9515e45b92e18</property>
     <property name="shotcut:caption">working_entrance1_1.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter40" in="00:00:05.400" out="00:01:16.200">
+    <filter id="filter47" in="00:00:05.400" out="00:01:16.200">
       <property name="lift_r">1.5259e-05</property>
       <property name="lift_g">1.5259e-05</property>
       <property name="lift_b">1.5259e-05</property>
@@ -783,7 +887,7 @@ p, li { white-space: pre-wrap; }
       <property name="gain_b">1.00003</property>
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
-    <filter id="filter41" in="00:00:05.400" out="00:01:16.200">
+    <filter id="filter48" in="00:00:05.400" out="00:01:16.200">
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
@@ -797,7 +901,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:filter">contrast</property>
     </filter>
   </chain>
-  <chain id="chain5" out="00:00:19.967">
+  <chain id="chain7" out="00:00:19.967">
     <property name="length">00:00:20.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/6923433-sd_960_540_30fps.mp4</property>
@@ -810,7 +914,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">6923433-sd_960_540_30fps.mp4</property>
     <property name="xml">was here</property>
   </chain>
-  <chain id="chain6" out="00:04:19.967">
+  <chain id="chain8" out="00:04:19.967">
     <property name="length">00:04:20.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/working_entrance2_2.MOV</property>
@@ -822,7 +926,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">4eccfdbdd54231e46417883559fe9a46</property>
     <property name="shotcut:caption">working_entrance2_2.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter42" in="00:00:08.200" out="00:04:20.200">
+    <filter id="filter49" in="00:00:08.200" out="00:04:20.200">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.467=1</property>
       <property name="mlt_service">brightness</property>
@@ -830,7 +934,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.500</property>
     </filter>
-    <filter id="filter43" in="00:00:08.200" out="00:04:20.200">
+    <filter id="filter50" in="00:00:08.200" out="00:04:20.200">
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
@@ -843,7 +947,7 @@ p, li { white-space: pre-wrap; }
       <property name="mlt_service">lift_gamma_gain</property>
       <property name="shotcut:filter">contrast</property>
     </filter>
-    <filter id="filter44" in="00:00:08.200" out="00:04:20.200">
+    <filter id="filter51" in="00:00:08.200" out="00:04:20.200">
       <property name="lift_r">0</property>
       <property name="lift_g">0</property>
       <property name="lift_b">0</property>
@@ -856,7 +960,7 @@ p, li { white-space: pre-wrap; }
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
   </chain>
-  <chain id="chain7" out="00:03:02.667">
+  <chain id="chain9" out="00:03:02.667">
     <property name="length">00:03:02.700</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/working_entrance3.MOV</property>
@@ -868,7 +972,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">2b77e82dc7e1edc290c88381cbe8e68b</property>
     <property name="shotcut:caption">working_entrance3.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter45" in="00:00:06.000" out="00:02:58.133">
+    <filter id="filter52" in="00:00:06.000" out="00:02:58.133">
       <property name="lift_r">-0.136095</property>
       <property name="lift_g">-0.136095</property>
       <property name="lift_b">-0.136095</property>
@@ -883,8 +987,8 @@ p, li { white-space: pre-wrap; }
   </chain>
   <tractor id="tractor0" in="00:00:00.000" out="00:00:00.000">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain6" in="00:04:19.733" out="00:04:19.733"/>
-    <track producer="chain7" in="00:00:06.000" out="00:00:06.000"/>
+    <track producer="chain8" in="00:04:19.733" out="00:04:19.733"/>
+    <track producer="chain9" in="00:00:06.000" out="00:00:06.000"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -918,7 +1022,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">working_entrance3.MOV (2x)</property>
     <property name="xml">was here</property>
     <property name="shotcut:defaultAudioIndex">1</property>
-    <filter id="filter46" in="00:01:28.900" out="00:01:29.267">
+    <filter id="filter53" in="00:01:28.900" out="00:01:29.267">
       <property name="lift_r">-0.619013</property>
       <property name="lift_g">-0.619013</property>
       <property name="lift_b">-0.619013</property>
@@ -931,7 +1035,7 @@ p, li { white-space: pre-wrap; }
       <property name="mlt_service">lift_gamma_gain</property>
     </filter>
   </producer>
-  <chain id="chain9" out="00:00:19.967">
+  <chain id="chain10" out="00:00:19.967">
     <property name="length">00:00:20.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/6923433-sd_960_540_30fps.mp4</property>
@@ -944,7 +1048,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">6923433-sd_960_540_30fps.mp4</property>
     <property name="xml">was here</property>
   </chain>
-  <chain id="chain8" out="00:00:22.967">
+  <chain id="chain11" out="00:00:22.967">
     <property name="length">00:00:23.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/working_diducit.MOV</property>
@@ -956,7 +1060,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">2d30dfa6932c2f436b33ff0adf43822f</property>
     <property name="shotcut:caption">working_diducit.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter47" in="00:00:03.267" out="00:00:20.433">
+    <filter id="filter54" in="00:00:03.267" out="00:00:20.433">
       <property name="lift_r">-0.0650797</property>
       <property name="lift_g">-0.0760967</property>
       <property name="lift_b">-0.0760967</property>
@@ -983,7 +1087,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter49" in="00:00:00.667" out="00:00:02.300">
+    <filter id="filter55" in="00:00:00.667" out="00:00:02.300">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1010,7 +1114,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter51" in="00:00:00.667" out="00:00:02.300">
+    <filter id="filter56" in="00:00:00.667" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:01.667=1</property>
       <property name="mlt_service">brightness</property>
@@ -1020,72 +1124,6 @@ p, li { white-space: pre-wrap; }
     </filter>
   </producer>
   <producer id="producer14" in="00:00:00.000" out="03:59:59.967">
-    <property name="length">04:00:00.000</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
-    <property name="ttl">1</property>
-    <property name="aspect_ratio">1</property>
-    <property name="progressive">1</property>
-    <property name="seekable">1</property>
-    <property name="mlt_service">qimage</property>
-    <property name="creation_time">2024-04-18T21:52:04</property>
-    <property name="shotcut:caption">blackscreen.png</property>
-    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
-    <property name="ignore_points">0</property>
-    <property name="xml">was here</property>
-    <filter id="filter53" out="00:00:02.300">
-      <property name="argument"></property>
-      <property name="geometry">110 140 1700 800 1</property>
-      <property name="family">Sans</property>
-      <property name="size">48</property>
-      <property name="weight">400</property>
-      <property name="style">normal</property>
-      <property name="fgcolour">0x000000ff</property>
-      <property name="bgcolour">#00000000</property>
-      <property name="olcolour">0x00000000</property>
-      <property name="pad">0</property>
-      <property name="halign">left</property>
-      <property name="valign">top</property>
-      <property name="outline">0</property>
-      <property name="pixel_ratio">1</property>
-      <property name="mlt_service">qtext</property>
-      <property name="shotcut:filter">richText</property>
-      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;PRODUCED BY&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;JACOB LIU&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
-      <property name="shotcut:animIn">00:00:00.000</property>
-      <property name="shotcut:animOut">00:00:00.000</property>
-    </filter>
-    <filter id="filter54" out="00:00:02.300">
-      <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.333=1</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeInBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animIn">11</property>
-    </filter>
-    <filter id="filter55" out="00:00:02.300">
-      <property name="start">1</property>
-      <property name="level">00:00:02.000=1;00:00:02.300=0</property>
-      <property name="mlt_service">brightness</property>
-      <property name="shotcut:filter">fadeOutBrightness</property>
-      <property name="alpha">1</property>
-      <property name="shotcut:animOut">00:00:00.333</property>
-    </filter>
-    <filter id="filter56" out="00:00:02.300">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeInVolume</property>
-      <property name="shotcut:animIn">11</property>
-    </filter>
-  </producer>
-  <producer id="producer15" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
@@ -1120,39 +1158,38 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;SIYU FAN&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;AS&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;CALLIE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;PRODUCED BY&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;JACOB LIU&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
     <filter id="filter58" out="00:00:02.300">
       <property name="start">1</property>
-      <property name="level">00:00:00.000=0;00:00:00.300=1</property>
+      <property name="level">00:00:00.000=0;00:00:00.333=1</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeInBrightness</property>
       <property name="alpha">1</property>
-      <property name="shotcut:animIn">00:00:00.333</property>
+      <property name="shotcut:animIn">11</property>
     </filter>
     <filter id="filter59" out="00:00:02.300">
       <property name="start">1</property>
-      <property name="level">00:00:02.033=1;00:00:02.300=0</property>
+      <property name="level">00:00:02.000=1;00:00:02.300=0</property>
       <property name="mlt_service">brightness</property>
       <property name="shotcut:filter">fadeOutBrightness</property>
       <property name="alpha">1</property>
-      <property name="shotcut:animOut">9</property>
+      <property name="shotcut:animOut">00:00:00.333</property>
     </filter>
     <filter id="filter60" out="00:00:02.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:02.033=0;00:00:02.300=-60</property>
+      <property name="level">00:00:00.000=-60;00:00:00.333=0</property>
       <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">9</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">11</property>
     </filter>
   </producer>
-  <producer id="producer16" in="00:00:00.000" out="03:59:59.967">
+  <producer id="producer15" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
@@ -1187,9 +1224,10 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;AUSTIN SHI&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;SIYU FAN&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;AS&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;CHRISTIAN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;CALLIE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
@@ -1218,6 +1256,72 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animOut">9</property>
     </filter>
   </producer>
+  <producer id="producer16" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/blackscreen.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2024-04-18T21:52:04</property>
+    <property name="shotcut:caption">blackscreen.png</property>
+    <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <filter id="filter65" out="00:00:02.300">
+      <property name="argument"></property>
+      <property name="geometry">110 140 1700 800 1</property>
+      <property name="family">Sans</property>
+      <property name="size">48</property>
+      <property name="weight">400</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">0x000000ff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">0x00000000</property>
+      <property name="pad">0</property>
+      <property name="halign">left</property>
+      <property name="valign">top</property>
+      <property name="outline">0</property>
+      <property name="pixel_ratio">1</property>
+      <property name="mlt_service">qtext</property>
+      <property name="shotcut:filter">richText</property>
+      <property name="html">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;AUSTIN SHI&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:136pt; color:#d1d5d5;&quot;&gt;AS&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New'; font-size:164pt; color:#d1d5d5;&quot;&gt;CHRISTIAN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+    <filter id="filter66" out="00:00:02.300">
+      <property name="start">1</property>
+      <property name="level">00:00:00.000=0;00:00:00.300=1</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animIn">00:00:00.333</property>
+    </filter>
+    <filter id="filter67" out="00:00:02.300">
+      <property name="start">1</property>
+      <property name="level">00:00:02.033=1;00:00:02.300=0</property>
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="alpha">1</property>
+      <property name="shotcut:animOut">9</property>
+    </filter>
+    <filter id="filter68" out="00:00:02.300">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:02.033=0;00:00:02.300=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">9</property>
+    </filter>
+  </producer>
   <producer id="producer17" in="00:00:00.000" out="03:59:59.967">
     <property name="length">04:00:00.000</property>
     <property name="eof">pause</property>
@@ -1232,7 +1336,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter65" out="00:00:01.133">
+    <filter id="filter69" out="00:00:01.133">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1259,7 +1363,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter66" out="00:00:01.133">
+    <filter id="filter70" out="00:00:01.133">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.300=1</property>
       <property name="mlt_service">brightness</property>
@@ -1267,7 +1371,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">10</property>
     </filter>
-    <filter id="filter67" out="00:00:01.133">
+    <filter id="filter71" out="00:00:01.133">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:00.000=-60;00:00:00.300=0</property>
@@ -1290,7 +1394,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter68" in="00:00:01.167" out="00:00:02.267">
+    <filter id="filter72" in="00:00:01.167" out="00:00:02.267">
       <property name="argument"></property>
       <property name="geometry">110 140 1700 800 1</property>
       <property name="family">Sans</property>
@@ -1317,7 +1421,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter69" in="00:00:01.167" out="00:00:02.267">
+    <filter id="filter73" in="00:00:01.167" out="00:00:02.267">
       <property name="start">1</property>
       <property name="level">00:00:00.833=1;00:00:01.100=0</property>
       <property name="mlt_service">brightness</property>
@@ -1325,7 +1429,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter70" in="00:00:01.167" out="00:00:02.267">
+    <filter id="filter74" in="00:00:01.167" out="00:00:02.267">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:00.833=0;00:00:01.100=-60</property>
@@ -1348,7 +1452,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">02eb36967dd439514cee4af71e69baa3</property>
     <property name="ignore_points">0</property>
     <property name="xml">was here</property>
-    <filter id="filter48" out="00:00:02.300">
+    <filter id="filter75" out="00:00:02.300">
       <property name="argument"></property>
       <property name="geometry">32 52 1820 955 1</property>
       <property name="family">Sans</property>
@@ -1379,7 +1483,7 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:animIn">00:00:00.000</property>
       <property name="shotcut:animOut">00:00:00.000</property>
     </filter>
-    <filter id="filter50" out="00:00:02.300">
+    <filter id="filter76" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:00.000=0;00:00:00.300=1</property>
       <property name="mlt_service">brightness</property>
@@ -1387,7 +1491,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animIn">00:00:00.333</property>
     </filter>
-    <filter id="filter52" out="00:00:02.300">
+    <filter id="filter77" out="00:00:02.300">
       <property name="start">1</property>
       <property name="level">00:00:02.033=1;00:00:02.300=0</property>
       <property name="mlt_service">brightness</property>
@@ -1395,7 +1499,7 @@ p, li { white-space: pre-wrap; }
       <property name="alpha">1</property>
       <property name="shotcut:animOut">9</property>
     </filter>
-    <filter id="filter71" out="00:00:02.300">
+    <filter id="filter78" out="00:00:02.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:02.033=0;00:00:02.300=-60</property>
@@ -1420,20 +1524,22 @@ p, li { white-space: pre-wrap; }
     <entry producer="producer9" in="00:00:00.000" out="00:00:00.500"/>
     <entry producer="producer10" in="00:00:00.000" out="00:00:00.400"/>
     <entry producer="producer11" in="00:00:00.000" out="00:00:01.533"/>
-    <blank length="00:00:00.067"/>
-    <entry producer="chain1" in="00:00:04.167" out="00:01:45.067"/>
-    <entry producer="chain2" in="00:00:00.600" out="00:00:41.533"/>
-    <entry producer="chain3" in="00:00:04.533" out="00:01:37.533"/>
-    <entry producer="chain4" in="00:00:05.400" out="00:01:16.200"/>
-    <entry producer="chain5" in="00:00:00.000" out="00:00:00.367"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:32.300"/>
+    <entry producer="chain2" in="00:00:32.333" out="00:00:33.167"/>
+    <blank length="00:00:06.700"/>
+    <entry producer="chain3" in="00:00:04.367" out="00:01:45.067"/>
+    <entry producer="chain4" in="00:00:00.600" out="00:00:41.533"/>
+    <entry producer="chain5" in="00:00:04.533" out="00:01:37.533"/>
+    <entry producer="chain6" in="00:00:05.400" out="00:01:16.200"/>
+    <entry producer="chain7" in="00:00:00.000" out="00:00:00.367"/>
     <blank length="00:00:48.133"/>
-    <entry producer="chain6" in="00:00:08.200" out="00:04:19.700"/>
+    <entry producer="chain8" in="00:00:08.200" out="00:04:19.700"/>
     <entry producer="tractor0" in="00:00:00.000" out="00:00:00.000"/>
-    <entry producer="chain7" in="00:00:06.033" out="00:02:58.133"/>
+    <entry producer="chain9" in="00:00:06.033" out="00:02:58.133"/>
     <blank length="00:00:00.067"/>
     <entry producer="producer12" in="00:01:28.900" out="00:01:29.267"/>
-    <entry producer="chain9" in="00:00:00.000" out="00:00:02.667"/>
-    <entry producer="chain8" in="00:00:03.267" out="00:00:20.433"/>
+    <entry producer="chain10" in="00:00:00.000" out="00:00:02.667"/>
+    <entry producer="chain11" in="00:00:03.267" out="00:00:20.433"/>
     <blank length="00:00:00.133"/>
     <entry producer="producer13" in="00:00:00.767" out="00:00:02.300"/>
     <entry producer="producer14" in="00:00:00.000" out="00:00:02.300"/>
@@ -1460,13 +1566,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">6a89b9daef74e5e3a9ba217a83d7721f</property>
     <property name="shotcut:caption">Theme_EndCreds_Party_Interview_IntroCredits_Blooper_Buildup.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter72" in="00:02:48.000" out="00:02:51.333">
+    <filter id="filter79" in="00:02:50.700" out="00:02:54.500">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:02.933=0;00:00:03.333=-60</property>
+      <property name="level">00:00:02.333=0;00:00:03.800=-60</property>
       <property name="mlt_service">volume</property>
       <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">13</property>
+      <property name="shotcut:animOut">45</property>
     </filter>
   </chain>
   <chain id="chain13" out="00:02:04.800">
@@ -1482,7 +1588,7 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:caption">working_entrance1_1.MOV</property>
     <property name="shotcut:defaultAudioIndex">1</property>
     <property name="xml">was here</property>
-    <filter id="filter73" in="00:01:16.300" out="00:02:04.800">
+    <filter id="filter80" in="00:01:16.300" out="00:02:04.800">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">00:00:47.867=0;00:00:48.500=-60</property>
@@ -1490,14 +1596,14 @@ p, li { white-space: pre-wrap; }
       <property name="shotcut:filter">fadeOutVolume</property>
       <property name="shotcut:animOut">00:00:00.667</property>
     </filter>
-    <filter id="filter74" in="00:01:16.300" out="00:02:04.800">
+    <filter id="filter81" in="00:01:16.300" out="00:02:04.800">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">-3</property>
+      <property name="level">3.5</property>
       <property name="mlt_service">volume</property>
     </filter>
   </chain>
-  <chain id="chain10" out="00:00:13.667">
+  <chain id="chain12" out="00:00:13.667">
     <property name="length">00:00:13.700</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/IMG_1694 2.MOV</property>
@@ -1509,14 +1615,14 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">ea6e0a932af0f7b0810b541714589417</property>
     <property name="shotcut:caption">IMG_1694 2.MOV</property>
     <property name="xml">was here</property>
-    <filter id="filter75" in="00:00:06.333" out="00:00:07.367">
+    <filter id="filter82" in="00:00:06.333" out="00:00:07.367">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">24</property>
       <property name="mlt_service">volume</property>
     </filter>
   </chain>
-  <chain id="chain11" out="00:00:13.667">
+  <chain id="chain14" out="00:00:13.667">
     <property name="length">00:00:13.700</property>
     <property name="eof">pause</property>
     <property name="resource">IMG_1694 2 - Reversed1.mp4</property>
@@ -1531,14 +1637,14 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/IMG_1694 2.MOV</property>
     <property name="shotcut:caption">IMG_1694 2 - Reversed1.mp4</property>
     <property name="xml">was here</property>
-    <filter id="filter76" in="00:00:06.233" out="00:00:07.300">
+    <filter id="filter83" in="00:00:06.233" out="00:00:07.300">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">24</property>
       <property name="mlt_service">volume</property>
     </filter>
   </chain>
-  <chain id="chain14" out="00:01:16.467">
+  <chain id="chain15" out="00:01:16.467">
     <property name="length">00:01:16.500</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
@@ -1550,29 +1656,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter77" in="00:00:37.800" out="00:00:52.167">
+    <filter id="filter84" in="00:00:15.400" out="00:00:31.433">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">00:00:14.033=0;00:00:14.367=-60</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">11</property>
-    </filter>
-    <filter id="filter78" in="00:00:37.800" out="00:00:52.167">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:00.000=-60;00:00:02.700=0</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeInVolume</property>
-      <property name="shotcut:animIn">82</property>
-    </filter>
-    <filter id="filter79" in="00:00:37.800" out="00:00:52.167">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-20.8</property>
+      <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter80" in="00:00:37.800" out="00:00:52.167">
+    <filter id="filter85" in="00:00:15.400" out="00:00:31.433">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -1592,7 +1682,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter81" in="00:00:37.800" out="00:00:52.167">
+    <filter id="filter86" in="00:00:15.400" out="00:00:31.433">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -1617,17 +1707,17 @@ p, li { white-space: pre-wrap; }
   <playlist id="playlist2">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A1</property>
-    <blank length="00:00:15.967"/>
-    <entry producer="chain45" in="00:02:48.000" out="00:02:51.333"/>
-    <blank length="00:05:05.767"/>
+    <blank length="00:00:15.933"/>
+    <entry producer="chain45" in="00:02:50.700" out="00:02:54.500"/>
+    <blank length="00:05:44.967"/>
     <entry producer="chain13" in="00:01:16.300" out="00:02:04.800"/>
-    <blank length="00:01:38.633"/>
-    <entry producer="chain10" in="00:00:06.333" out="00:00:07.367"/>
-    <entry producer="chain11" in="00:00:06.233" out="00:00:07.300"/>
-    <blank length="00:05:42.233"/>
-    <entry producer="chain14" in="00:00:37.800" out="00:00:52.167"/>
+    <blank length="00:01:39.033"/>
+    <entry producer="chain12" in="00:00:06.333" out="00:00:07.367"/>
+    <entry producer="chain14" in="00:00:06.233" out="00:00:07.300"/>
+    <blank length="00:05:42.800"/>
+    <entry producer="chain15" in="00:00:15.400" out="00:00:30.900"/>
   </playlist>
-  <chain id="chain12" out="00:04:06.767">
+  <chain id="chain16" out="00:04:06.767">
     <property name="length">00:04:06.800</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_Party_Interview_IntroCredits_Blooper_Buildup.mp3</property>
@@ -1639,126 +1729,6 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">6a89b9daef74e5e3a9ba217a83d7721f</property>
     <property name="shotcut:caption">Theme_EndCreds_Party_Interview_IntroCredits_Blooper_Buildup.mp3</property>
     <property name="xml">was here</property>
-  </chain>
-  <chain id="chain15" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter82" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">-6</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter83" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter84" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <chain id="chain16" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter85" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">0</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter86" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter87" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
   </chain>
   <chain id="chain17" out="00:01:16.467">
     <property name="length">00:01:16.500</property>
@@ -1772,13 +1742,21 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter88" out="00:00:05.867">
+    <filter id="filter87" in="00:00:37.800" out="00:01:09.933">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">0</property>
+      <property name="level">00:00:00.000=-60;00:00:01.633=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">00:00:01.667</property>
+    </filter>
+    <filter id="filter88" in="00:00:37.800" out="00:01:09.933">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">-10</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter89" out="00:00:05.867">
+    <filter id="filter89" in="00:00:37.800" out="00:01:09.933">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -1798,7 +1776,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter90" out="00:00:05.867">
+    <filter id="filter90" in="00:00:37.800" out="00:01:09.933">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -1835,7 +1813,7 @@ p, li { white-space: pre-wrap; }
     <filter id="filter91" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">1</property>
+      <property name="level">-6</property>
       <property name="mlt_service">volume</property>
     </filter>
     <filter id="filter92" out="00:00:05.867">
@@ -1895,7 +1873,7 @@ p, li { white-space: pre-wrap; }
     <filter id="filter94" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">1</property>
+      <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
     <filter id="filter95" out="00:00:05.867">
@@ -1952,13 +1930,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter97" out="00:00:01.433">
+    <filter id="filter97" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">20</property>
+      <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter98" out="00:00:01.433">
+    <filter id="filter98" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -1978,7 +1956,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter99" out="00:00:01.433">
+    <filter id="filter99" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2012,13 +1990,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter100" in="00:00:01.467" out="00:00:05.867">
+    <filter id="filter100" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">6</property>
+      <property name="level">1</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter101" in="00:00:01.467" out="00:00:05.867">
+    <filter id="filter101" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2038,7 +2016,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter102" in="00:00:01.467" out="00:00:05.867">
+    <filter id="filter102" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2075,7 +2053,7 @@ p, li { white-space: pre-wrap; }
     <filter id="filter103" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">6</property>
+      <property name="level">1</property>
       <property name="mlt_service">volume</property>
     </filter>
     <filter id="filter104" out="00:00:05.867">
@@ -2132,13 +2110,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter106" out="00:00:05.867">
+    <filter id="filter106" out="00:00:01.433">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">6</property>
+      <property name="level">20</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter107" out="00:00:05.867">
+    <filter id="filter107" out="00:00:01.433">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2158,7 +2136,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter108" out="00:00:05.867">
+    <filter id="filter108" out="00:00:01.433">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2192,13 +2170,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter109" out="00:00:05.867">
+    <filter id="filter109" in="00:00:01.467" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">6</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter110" out="00:00:05.867">
+    <filter id="filter110" in="00:00:01.467" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2218,7 +2196,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter111" out="00:00:05.867">
+    <filter id="filter111" in="00:00:01.467" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2255,7 +2233,7 @@ p, li { white-space: pre-wrap; }
     <filter id="filter112" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">3</property>
+      <property name="level">6</property>
       <property name="mlt_service">volume</property>
     </filter>
     <filter id="filter113" out="00:00:05.867">
@@ -2315,7 +2293,7 @@ p, li { white-space: pre-wrap; }
     <filter id="filter115" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">1</property>
+      <property name="level">6</property>
       <property name="mlt_service">volume</property>
     </filter>
     <filter id="filter116" out="00:00:05.867">
@@ -2372,13 +2350,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter118" out="00:00:07.867">
+    <filter id="filter118" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">6</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter119" out="00:00:07.867">
+    <filter id="filter119" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2398,7 +2376,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter120" out="00:00:07.867">
+    <filter id="filter120" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2419,14 +2397,6 @@ p, li { white-space: pre-wrap; }
       <property name=".dummy"></property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter121" out="00:00:07.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">00:00:06.000=0;00:00:07.867=-60</property>
-      <property name="mlt_service">volume</property>
-      <property name="shotcut:filter">fadeOutVolume</property>
-      <property name="shotcut:animOut">57</property>
-    </filter>
   </chain>
   <chain id="chain28" out="00:01:16.467">
     <property name="length">00:01:16.500</property>
@@ -2440,13 +2410,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter122" out="00:00:05.867">
+    <filter id="filter121" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">0</property>
+      <property name="level">3</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter123" out="00:00:05.867">
+    <filter id="filter122" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2466,7 +2436,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter124" out="00:00:05.867">
+    <filter id="filter123" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2500,13 +2470,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter125" out="00:00:05.867">
+    <filter id="filter124" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">0</property>
+      <property name="level">1</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter126" out="00:00:05.867">
+    <filter id="filter125" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2526,7 +2496,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter127" out="00:00:05.867">
+    <filter id="filter126" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2560,13 +2530,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter128" out="00:00:05.867">
+    <filter id="filter127" out="00:00:07.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">0</property>
+      <property name="level">6</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter129" out="00:00:05.867">
+    <filter id="filter128" out="00:00:07.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -2586,7 +2556,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter130" out="00:00:05.867">
+    <filter id="filter129" out="00:00:07.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -2606,6 +2576,14 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name=".dummy"></property>
       <property name="instances">2</property>
+    </filter>
+    <filter id="filter130" out="00:00:07.867">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:06.000=0;00:00:07.867=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">57</property>
     </filter>
   </chain>
   <chain id="chain31" out="00:01:16.467">
@@ -3160,13 +3138,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter158" in="00:00:00.067" out="00:00:10.633">
+    <filter id="filter158" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter159" in="00:00:00.067" out="00:00:10.633">
+    <filter id="filter159" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3186,7 +3164,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter160" in="00:00:00.067" out="00:00:10.633">
+    <filter id="filter160" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3220,13 +3198,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter161" out="00:00:01.867">
+    <filter id="filter161" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">14</property>
+      <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter162" out="00:00:01.867">
+    <filter id="filter162" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3246,7 +3224,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter163" out="00:00:01.867">
+    <filter id="filter163" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3280,13 +3258,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter164" in="00:00:01.900" out="00:00:07.567">
+    <filter id="filter164" out="00:00:05.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">6</property>
+      <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter165" in="00:00:01.900" out="00:00:07.567">
+    <filter id="filter165" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3306,7 +3284,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter166" in="00:00:01.900" out="00:00:07.567">
+    <filter id="filter166" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3340,13 +3318,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter167" in="00:00:01.900" out="00:00:07.600">
+    <filter id="filter167" in="00:00:00.067" out="00:00:10.633">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">6</property>
+      <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter168" in="00:00:01.900" out="00:00:07.600">
+    <filter id="filter168" in="00:00:00.067" out="00:00:10.633">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3366,7 +3344,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter169" in="00:00:01.900" out="00:00:07.600">
+    <filter id="filter169" in="00:00:00.067" out="00:00:10.633">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3400,13 +3378,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter170" in="00:00:01.900" out="00:00:07.967">
+    <filter id="filter170" out="00:00:01.867">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">6</property>
+      <property name="level">14</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter171" in="00:00:01.900" out="00:00:07.967">
+    <filter id="filter171" out="00:00:01.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3426,7 +3404,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter172" in="00:00:01.900" out="00:00:07.967">
+    <filter id="filter172" out="00:00:01.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3460,13 +3438,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter173" out="00:00:05.867">
+    <filter id="filter173" in="00:00:01.900" out="00:00:07.567">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">2</property>
+      <property name="level">6</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter174" out="00:00:05.867">
+    <filter id="filter174" in="00:00:01.900" out="00:00:07.567">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3486,7 +3464,187 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter175" out="00:00:05.867">
+    <filter id="filter175" in="00:00:01.900" out="00:00:07.567">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain47" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter176" in="00:00:01.900" out="00:00:07.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">6</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter177" in="00:00:01.900" out="00:00:07.600">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter178" in="00:00:01.900" out="00:00:07.600">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain48" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter179" in="00:00:01.900" out="00:00:07.967">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">6</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter180" in="00:00:01.900" out="00:00:07.967">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter181" in="00:00:01.900" out="00:00:07.967">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain49" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter182" out="00:00:05.867">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">2</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter183" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter184" out="00:00:05.867">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3640,13 +3798,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter214" in="00:00:01.700" out="00:00:05.867">
+    <filter id="filter214" in="00:00:01.700" out="00:00:05.767">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
-      <property name="level">20</property>
+      <property name="level">12</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter215" in="00:00:01.700" out="00:00:05.867">
+    <filter id="filter215" in="00:00:01.700" out="00:00:05.767">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3666,7 +3824,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter216" in="00:00:01.700" out="00:00:05.867">
+    <filter id="filter216" in="00:00:01.700" out="00:00:05.767">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -3688,7 +3846,7 @@ p, li { white-space: pre-wrap; }
       <property name="instances">2</property>
     </filter>
   </chain>
-  <chain id="chain61" out="00:01:16.467">
+  <chain id="chain50" out="00:01:16.467">
     <property name="length">00:01:16.500</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
@@ -3700,133 +3858,13 @@ p, li { white-space: pre-wrap; }
     <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
     <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
     <property name="xml">was here</property>
-    <filter id="filter218" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">8</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter219" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter220" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <chain id="chain62" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter221" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">2</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter222" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter223" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <chain id="chain63" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter224" out="00:00:05.867">
+    <filter id="filter185" out="00:00:11.467">
       <property name="window">75</property>
       <property name="max_gain">20dB</property>
       <property name="level">0</property>
       <property name="mlt_service">volume</property>
     </filter>
-    <filter id="filter225" out="00:00:05.867">
+    <filter id="filter186" out="00:00:11.467">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">parametricEq</property>
       <property name="0">0</property>
@@ -3846,7 +3884,7 @@ p, li { white-space: pre-wrap; }
       <property name="14">0.5</property>
       <property name="instances">2</property>
     </filter>
-    <filter id="filter226" out="00:00:05.867">
+    <filter id="filter187" out="00:00:11.467">
       <property name="mlt_service">ladspa.1204</property>
       <property name="shotcut:filter">3BandEq</property>
       <property name="0">0</property>
@@ -4708,325 +4746,6 @@ p, li { white-space: pre-wrap; }
       <property name="instances">2</property>
     </filter>
   </chain>
-  <chain id="chain79" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter272" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">0</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter273" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter274" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <chain id="chain80" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter275" out="00:00:08.033">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">0</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter276" out="00:00:08.033">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter277" out="00:00:08.033">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <chain id="chain81" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter278" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">16</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter279" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter280" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <tractor id="tractor1" in="00:00:00.000" out="00:00:00.100">
-    <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain80" in="00:00:07.933" out="00:00:08.033"/>
-    <track producer="chain81" in="00:00:00.000" out="00:00:00.100"/>
-    <transition id="transition2" out="00:00:00.100">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="factory">loader</property>
-      <property name="mlt_service">luma</property>
-      <property name="alpha_over">1</property>
-    </transition>
-    <transition id="transition3" out="00:00:00.100">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="mlt_service">mix</property>
-      <property name="start">-1</property>
-      <property name="accepts_blanks">1</property>
-    </transition>
-  </tractor>
-  <chain id="chain82" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter281" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">10</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter282" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter283" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
-  <chain id="chain83" out="00:01:16.467">
-    <property name="length">00:01:16.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="seekable">1</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="mute_on_pause">0</property>
-    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
-    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
-    <property name="xml">was here</property>
-    <filter id="filter284" out="00:00:05.867">
-      <property name="window">75</property>
-      <property name="max_gain">20dB</property>
-      <property name="level">16</property>
-      <property name="mlt_service">volume</property>
-    </filter>
-    <filter id="filter285" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">parametricEq</property>
-      <property name="0">0</property>
-      <property name="1">20</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1911.6</property>
-      <property name="5">1</property>
-      <property name="6">0</property>
-      <property name="7">700</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">5000</property>
-      <property name="11">1</property>
-      <property name="12">0</property>
-      <property name="13">15000</property>
-      <property name="14">0.5</property>
-      <property name="instances">2</property>
-    </filter>
-    <filter id="filter286" out="00:00:05.867">
-      <property name="mlt_service">ladspa.1204</property>
-      <property name="shotcut:filter">3BandEq</property>
-      <property name="0">0</property>
-      <property name="1">200</property>
-      <property name="2">0.5</property>
-      <property name="3">0</property>
-      <property name="4">1000</property>
-      <property name="5">1</property>
-      <property name="6">-17.9</property>
-      <property name="7">1000</property>
-      <property name="8">1</property>
-      <property name="9">0</property>
-      <property name="10">1000</property>
-      <property name="11">1</property>
-      <property name="12">-19.6</property>
-      <property name="13">5000</property>
-      <property name="14">0.5</property>
-      <property name=".dummy"></property>
-      <property name="instances">2</property>
-    </filter>
-  </chain>
   <chain id="chain84" out="00:01:16.467">
     <property name="length">00:01:16.500</property>
     <property name="eof">pause</property>
@@ -5515,26 +5234,25 @@ p, li { white-space: pre-wrap; }
   <playlist id="playlist3">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A2</property>
-    <entry producer="chain12" in="00:02:28.067" out="00:02:43.300"/>
-    <blank length="00:04:45.533"/>
-    <entry producer="chain15" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain16" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain17" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain16" in="00:02:28.067" out="00:02:43.300"/>
+    <blank length="00:00:05.167"/>
+    <entry producer="chain17" in="00:00:37.800" out="00:01:09.933"/>
+    <blank length="00:04:47.833"/>
     <entry producer="chain18" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain19" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain20" in="00:00:00.000" out="00:00:01.433"/>
-    <entry producer="chain21" in="00:00:01.467" out="00:00:05.867"/>
+    <entry producer="chain20" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain21" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain22" in="00:00:00.000" out="00:00:05.867"/>
-    <blank length="00:00:00.033"/>
-    <entry producer="chain23" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain24" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain23" in="00:00:00.000" out="00:00:01.433"/>
+    <entry producer="chain24" in="00:00:01.467" out="00:00:05.867"/>
     <entry producer="chain25" in="00:00:00.000" out="00:00:05.867"/>
+    <blank length="00:00:00.033"/>
     <entry producer="chain26" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain27" in="00:00:00.000" out="00:00:07.867"/>
-    <blank length="00:00:16.133"/>
+    <entry producer="chain27" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain28" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain29" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain30" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain30" in="00:00:00.000" out="00:00:07.867"/>
+    <blank length="00:00:16.133"/>
     <entry producer="chain31" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain32" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain33" in="00:00:00.000" out="00:00:05.867"/>
@@ -5544,23 +5262,23 @@ p, li { white-space: pre-wrap; }
     <entry producer="chain37" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain38" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain39" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain40" in="00:00:00.067" out="00:00:10.633"/>
+    <entry producer="chain40" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain41" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain42" in="00:00:00.000" out="00:00:05.867"/>
+    <entry producer="chain43" in="00:00:00.067" out="00:00:10.633"/>
     <blank length="00:00:00.033"/>
-    <entry producer="chain41" in="00:00:00.067" out="00:00:01.867"/>
-    <entry producer="chain42" in="00:00:01.900" out="00:00:07.567"/>
-    <entry producer="chain43" in="00:00:01.900" out="00:00:07.600"/>
-    <entry producer="chain44" in="00:00:01.900" out="00:00:07.967"/>
-    <entry producer="chain46" in="00:00:00.133" out="00:00:05.867"/>
-    <blank length="00:01:22.600"/>
+    <entry producer="chain44" in="00:00:00.067" out="00:00:01.867"/>
+    <entry producer="chain46" in="00:00:01.900" out="00:00:07.567"/>
+    <entry producer="chain47" in="00:00:01.900" out="00:00:07.600"/>
+    <entry producer="chain48" in="00:00:01.900" out="00:00:07.967"/>
+    <entry producer="chain49" in="00:00:00.133" out="00:00:05.867"/>
+    <blank length="00:01:17.267"/>
     <entry producer="chain58" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain59" in="00:00:00.000" out="00:00:07.567"/>
     <blank length="00:00:00.033"/>
-    <entry producer="chain60" in="00:00:01.733" out="00:00:05.867"/>
-    <blank length="00:00:00.033"/>
-    <entry producer="chain61" in="00:00:00.033" out="00:00:05.867"/>
-    <entry producer="chain62" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain63" in="00:00:00.000" out="00:00:05.867"/>
-    <blank length="00:00:28.267"/>
+    <entry producer="chain60" in="00:00:01.733" out="00:00:05.767"/>
+    <entry producer="chain50" in="00:00:00.000" out="00:00:11.467"/>
+    <blank length="00:00:40.200"/>
     <entry producer="chain65" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain66" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain67" in="00:00:00.000" out="00:00:05.867"/>
@@ -5575,14 +5293,6 @@ p, li { white-space: pre-wrap; }
     <entry producer="chain76" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain77" in="00:00:00.000" out="00:00:05.867"/>
     <entry producer="chain78" in="00:00:00.000" out="00:00:05.867"/>
-    <blank length="00:00:00.033"/>
-    <entry producer="chain79" in="00:00:00.000" out="00:00:05.867"/>
-    <entry producer="chain80" in="00:00:00.000" out="00:00:07.900"/>
-    <entry producer="tractor1" in="00:00:00.000" out="00:00:00.100"/>
-    <entry producer="chain81" in="00:00:00.133" out="00:00:05.867"/>
-    <entry producer="chain82" in="00:00:00.133" out="00:00:05.867"/>
-    <blank length="00:00:00.067"/>
-    <entry producer="chain83" in="00:00:00.133" out="00:00:05.867"/>
     <entry producer="chain84" in="00:00:00.133" out="00:00:05.867"/>
     <entry producer="chain85" in="00:00:00.133" out="00:00:05.867"/>
     <entry producer="chain86" in="00:00:00.133" out="00:00:05.867"/>
@@ -5590,19 +5300,385 @@ p, li { white-space: pre-wrap; }
     <entry producer="chain88" in="00:00:00.133" out="00:00:05.867"/>
     <entry producer="chain89" in="00:00:00.133" out="00:00:05.867"/>
     <entry producer="chain90" in="00:00:00.133" out="00:00:05.400"/>
-    <blank length="00:00:04.133"/>
+    <blank length="00:00:35.500"/>
     <entry producer="producer20" in="00:00:00.167" out="00:00:09.233"/>
   </playlist>
+  <chain id="chain51" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter188" out="00:00:05.867">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">16</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter189" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter190" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain52" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter191" out="00:00:05.867">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">16</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter192" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter193" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain53" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter194" out="00:00:05.400">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">16</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter195" out="00:00:05.400">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter196" out="00:00:05.400">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain54" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter197" out="00:00:05.867">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">16</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter198" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter199" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain55" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter200" out="00:00:05.867">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">16</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter201" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter202" out="00:00:05.867">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <chain id="chain56" out="00:01:16.467">
+    <property name="length">00:01:16.500</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/jacob/Documents/School/8th Grade (8Se)/Film Studies/DID_U_C_IT/clips/Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">27348aa37efd2e57461794b6e0737a31</property>
+    <property name="shotcut:caption">Theme_EndCreds_PartyMusic.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter203" out="00:00:03.600">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">16</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter204" out="00:00:03.600">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">parametricEq</property>
+      <property name="0">0</property>
+      <property name="1">20</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1911.6</property>
+      <property name="5">1</property>
+      <property name="6">0</property>
+      <property name="7">700</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">5000</property>
+      <property name="11">1</property>
+      <property name="12">0</property>
+      <property name="13">15000</property>
+      <property name="14">0.5</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter205" out="00:00:03.600">
+      <property name="mlt_service">ladspa.1204</property>
+      <property name="shotcut:filter">3BandEq</property>
+      <property name="0">0</property>
+      <property name="1">200</property>
+      <property name="2">0.5</property>
+      <property name="3">0</property>
+      <property name="4">1000</property>
+      <property name="5">1</property>
+      <property name="6">-17.9</property>
+      <property name="7">1000</property>
+      <property name="8">1</property>
+      <property name="9">0</property>
+      <property name="10">1000</property>
+      <property name="11">1</property>
+      <property name="12">-19.6</property>
+      <property name="13">5000</property>
+      <property name="14">0.5</property>
+      <property name=".dummy"></property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
   <playlist id="playlist4">
     <property name="shotcut:audio">1</property>
     <property name="shotcut:name">A3</property>
-    <blank length="00:00:00.033"/>
+    <blank length="00:13:24.900"/>
+    <entry producer="chain51" in="00:00:00.133" out="00:00:05.867"/>
+    <entry producer="chain52" in="00:00:00.133" out="00:00:05.867"/>
+    <entry producer="chain53" in="00:00:00.133" out="00:00:05.400"/>
+    <entry producer="chain54" in="00:00:00.133" out="00:00:05.867"/>
+    <entry producer="chain55" in="00:00:00.133" out="00:00:05.867"/>
+    <entry producer="chain56" in="00:00:00.133" out="00:00:03.600"/>
   </playlist>
-  <tractor id="tractor2" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:13:51.033">
+  <tractor id="tractor2" title="Shotcut version 22.03.30" in="00:00:00.000" out="00:14:32.767">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">1</property>
-    <property name="shotcut:scaleFactor">1.87925</property>
+    <property name="shotcut:scaleFactor">0.859083</property>
     <track producer="background"/>
     <track producer="playlist0"/>
     <track producer="playlist1"/>
